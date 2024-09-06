@@ -13,7 +13,7 @@ const CreateUser = () => {
 
     const Submit = (e) => {
           e.preventDefault();
-          axios.post("http://localhost:3002/createUser", {FirstName, LastName, PhoneNo, Email, Address})
+          axios.post("https://qwipo-assignment-backend.onrender.com/createUser", {FirstName, LastName, PhoneNo, Email, Address})
           .then(result => {
             console.log(result)
             navigate('/')
