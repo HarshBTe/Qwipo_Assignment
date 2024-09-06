@@ -37,7 +37,7 @@ const UpdateUser = () => {
         <div className="d-flex vh-100 bg-primary justify-content-center align-items-center">
             <div className="w-50 bg-white rounded p-3">
                 <form onSubmit={Update}>
-                    <h2>Update Task</h2>
+                    <h2>Update User</h2>
 
                     <div className="mb-2">
                        <label htmlFor="">FirstName</label>
