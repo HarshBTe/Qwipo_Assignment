@@ -12,7 +12,7 @@ const UpdateUser = () => {
     const navigate = useNavigate()
 
     useEffect(() => {
-        axios.get('http://localhost:3002/getUser/' + id )
+        axios.get('https://qwipo-assignment-backend.onrender.com/getUser/' + id )
         .then(result => {
             setFirstName(result.data.FirstName)
             setLastName(result.data.LastName)
@@ -25,7 +25,7 @@ const UpdateUser = () => {
 
     const Update = (e) => {
         e.preventDefault();
-        axios.put("http://localhost:3002/updateUser/" + id, {FirstName, LastName, PhoneNo, Email, Address})
+        axios.put("https://qwipo-assignment-backend.onrender.com/updateUser/" + id, {FirstName, LastName, PhoneNo, Email, Address})
         .then(result => {
           console.log(result)
           navigate('/')
