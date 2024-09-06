@@ -7,13 +7,13 @@ const Users = () => {
     const [users, setUsers] = useState([])
 
     useEffect(() => {
-        axios.get('http://localhost:3002')
+        axios.get('https://qwipo-assignment-backend.onrender.com')
         .then(result => setUsers(result.data))
         .catch(err => console.log(err))
     }, [])
 
     const handleDelete = (id) => {
-        axios.delete('http://localhost:3002/deleteUser/' + id)
+        axios.delete('https://qwipo-assignment-backend.onrender.com/deleteUser/' + id)
         .then(res => {console.log(res)
             window.location.reload()
         })
